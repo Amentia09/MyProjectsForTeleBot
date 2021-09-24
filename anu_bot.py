@@ -10,9 +10,9 @@ apihelper.proxy = {'http':'http://anu-study.kz'}
 
 
 keyboard1 = telebot.types.ReplyKeyboardMarkup()
-keyboard1.row('Привет', 'Пока', '000')
+keyboard1.row('Привет', 'Пока', 'Это первое меню')
 keyboard2 = telebot.types.ReplyKeyboardMarkup()
-keyboard2.row('Привет', '546', '000')
+keyboard2.row('Привет', 'Найс меню', 'Это второе меню')
 
 @bot.message_handler(commands=['start', 'help', 'web', 'ggwp', 'question'])
 def send_welcome(message):
